@@ -15,14 +15,15 @@
 </head>
 <body>
 
-	<h3>용어</h3>
+	<h3>용어검색</h3>
 	<br/>
 	<br/>
 	
-	<form action="/WebProject01/termlist.do">
-	<input type="text" name="search" ><br/>
-	<input type="submit" value="검색"/>
-	<br/>
+	<form action="/WebProject01/termlist.do?word=''">
+		<input type="text" name="search" class ="form-control">
+		</br>
+		</br>
+		<input type="submit" value="검색" class="col-sm-offset-7 btn btn-default"/>
 	</form>
 	
 </body>

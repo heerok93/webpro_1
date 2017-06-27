@@ -17,6 +17,7 @@
 footer {
 	background-color: #f2f2f2;
 	padding: 25px;
+	margin-top: 60px;
 }
 
 .carousel-inner img {
@@ -24,6 +25,14 @@ footer {
 	min-height: 200px;
 }
 
+.content {
+	height: 700px;
+}
+
+.menupath{
+	background-color: #f2f2f5;
+	height: 700px;
+}
 /* Hide the carousel text when the screen is less than 600 pixels wide */
 @media ( max-width : 600px) {
 	.carousel-caption {
@@ -37,11 +46,12 @@ footer {
 
 	<div class="container">
 
-		<div class="row">
+		<div class="row content">
+		
 			<div class="col-sm-2">
 				<jsp:include page="${menupath}"></jsp:include>
-			</div>
-			<div class="col-sm-8">
+			</div> 
+			<div class="col-sm-9">
 				<jsp:include page="${viewpath}"></jsp:include>
 			</div>
 		</div>

@@ -10,6 +10,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import term.dto.MeanDTO;
 import term.dto.TermDTO;
 
 public class TermDAOImpl implements TermDAO {
@@ -50,8 +51,31 @@ public class TermDAOImpl implements TermDAO {
 	}
 	
 	
-	
-
+	public MeanDTO getTermMean(String termId){
+		MeanDTO termdto = null;
+		Connection con = null;
+		PreparedStatement ptmt = null;
+		ResultSet rs = null;
+		                    //                 넣어야 한다.
+		try {
+			con = getConnection();
+		
+				ptmt = con.prepareStatement(TERM_MEAN);
+				ptmt.setString(1, termId);
+			
+			rs = ptmt.executeQuery();
+			
+			if(rs.next()){
+				termdto = new MeanDTO(rs.getString(1),rs.getString(2));
+			}
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}finally{
+			close(rs, ptmt, con);
+		}
+		return termdto;
+	}
 }
 
 

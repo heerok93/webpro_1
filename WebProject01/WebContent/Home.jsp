@@ -17,6 +17,7 @@
 footer {
 	background-color: #f2f2f2;
 	padding: 25px;
+	margin-top: 60px;
 }
 
 .carousel-inner img {
@@ -36,7 +37,6 @@ footer {
 	<jsp:include page="top.jsp"></jsp:include>
 	
 	<div class="container">
-	
 		<div class="row">
 			<div class="col-sm-8">
 				<jsp:include page="content.jsp"></jsp:include>
@@ -44,7 +44,7 @@ footer {
 			<div class="col-sm-4">
 				
 				<div>
-					<jsp:include page="member/login.jsp"></jsp:include> 
+					<jsp:include page="member/member_login.jsp"></jsp:include> 
 				</div>
 				<div class="well">
 					<jsp:include page="data/datamain.jsp"></jsp:include>

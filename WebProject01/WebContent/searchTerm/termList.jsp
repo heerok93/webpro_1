@@ -6,6 +6,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<script type="text/javascript">
+
+	function termMean(termId){
+		myopen = window.open("/WebProject01/meanPopup.do?termId="+termId,"mywin","width=400,height=600");
+	}
+
+
+</script>
 
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,17 +22,17 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <title>Insert title here</title>
-</head>
+</head> 
 <body>
 
 <% 
 		final int TERMTOTAL = 1349;
 		ArrayList<TermDTO> termlist = (ArrayList<TermDTO>)request.getAttribute("termlist");
-		
+		//container
 		%>
 
 
-<div class="container">          
+<div class=" col-sm-12">          
   <table class="table table-bordered">
     <thead>
       <tr>
@@ -44,7 +52,7 @@
     		TermDTO dto = termlist.get(i);%>
     		 <tr>
     	        <td><%=dto.getTerm_id() %></td>
-    	        <td><a href="#"><%=dto.getTerm_name()%></a></td>
+    	        <td><a href="#" onclick="termMean(<%=dto.getTerm_id() %>)"><%=dto.getTerm_name()%></a></td>
     	      </tr>
 <%}%>
     
@@ -56,6 +64,18 @@
 	  <li><a href="/WebProject01/termlist.do?page=<%=i %>"><%=i %></a></li>
 	   <%} }%>
 		</ul> 
+  
+  <ul class="pagination">
+    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+    <li class="active"><a href="#!">1</a></li>
+    <li class="waves-effect"><a href="#!">2</a></li>
+    <li class="waves-effect"><a href="#!">3</a></li>
+    <li class="waves-effect"><a href="#!">4</a></li>
+    <li class="waves-effect"><a href="#!">5</a></li>
+    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+  </ul>
+            
+  
   
 </div>
 
