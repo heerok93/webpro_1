@@ -14,8 +14,9 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<%String state = request.getParameter("state"); %>
 	<div class="container">
-	<h2>코스피종목</h2>
+	<h2><%=state %>종목</h2>
 	<div class="col-sm-10">
 	 	<table class="table table-bordered">
 	
