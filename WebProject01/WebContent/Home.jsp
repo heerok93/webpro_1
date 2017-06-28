@@ -44,7 +44,7 @@ footer {
 			<div class="col-sm-4">
 				
 				<div>
-					<jsp:include page="member/member_login.jsp"></jsp:include> 
+				<%/*	<jsp:include page="member/member_login.jsp"></jsp:include> */%>
 				</div>
 				<div class="well">
 					<jsp:include page="data/datamain.jsp"></jsp:include>
