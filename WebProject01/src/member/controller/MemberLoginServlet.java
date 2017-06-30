@@ -26,7 +26,6 @@ public class MemberLoginServlet extends HttpServlet {
 		sess.setAttribute("id", id);
 
 		MemberService service = new MemberServiceImpl();
-		System.out.println("µé¿Ô¶¥ !");
 		MemberDTO user = service.login(id, pw);
 		sess.setAttribute("user", user);
 		System.out.println(user.toString());
@@ -34,11 +33,11 @@ public class MemberLoginServlet extends HttpServlet {
 		if(user == null){
 			response.sendRedirect("Home.jsp"); 
 		} else {
-//			request.setAttribute("loginpage", "");			
+			request.setAttribute("loginpage", "member/member_mypage.jsp");			
 		}
 
 		RequestDispatcher rd =
-				request.getRequestDispatcher("Home2.jsp");
+				request.getRequestDispatcher("HomeAfterLogin.jsp");
 		rd.forward(request, response);
 
 	}

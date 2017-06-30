@@ -48,11 +48,9 @@ footer {
 				</div>
 				<div class="well">
 					<jsp:include page="data/datamain.jsp"></jsp:include>
-					
 				</div>
 			</div>
 		</div>
-		
 		<hr>
 	</div>
 
