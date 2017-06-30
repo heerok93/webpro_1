@@ -20,7 +20,7 @@
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="Home.jsp">Home</a></li>
-					<li><a href="/WebProject01/view.do?viewpath=../stock/kosdaq_view.jsp&menupath=../stock/stock_menu.jsp">모의투자</a></li>
+					<li><a href="/WebProject01/view.do?viewpath=../stock/stock_view.jsp&state=kospi&menupath=../stock/stock_menu.jsp">모의투자</a></li>
 					<li><a href="#">기업정보</a></li>
 					<li><a href="/WebProject01/termlist.do?page=1">용어검색</a></li>
 					<li><a href="/WebProject01/view.do?viewpath=../myPage/myPage_userHistory.jsp&menupath=../myPage/myPage_menu.jsp">마이페이지(주식관리)</a></li>

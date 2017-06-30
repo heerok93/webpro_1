@@ -24,25 +24,7 @@
 	<div>
 		<table class="table table-bordered">
 
-			<col width="4%">
-
-			<col width="7%">
-			<col width="7%">
-			<col width="7%">
-
-			<col width="9%">
-
-			<col width="9%">
-
-			<col width="9%">
-
-			<col width="9%">
-
-			<col width="9%">
-
-			<col width="9%">
-
-			<col width="9%">
+		
 			<tr>
 
 

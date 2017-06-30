@@ -14,8 +14,9 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<%String state = request.getParameter("state"); %>
 	<div class="container">
-	<h2>코스피종목</h2>
+	<h2><%=state %>종목</h2>
 	<div class="col-sm-10">
 	 	<table class="table table-bordered">
 	
@@ -29,6 +30,7 @@
 						<th>매수호가</th>
 						<th>매도호가</th>
 						<th>시가총액</th>
+						<th>결제</th>
 					
 		
 					</tr>
@@ -43,9 +45,7 @@
 						<td><%=i %></td>
 						<td><%=i %></td>
 						<td><%=i %></td>
-						
-					
-		
+						<td><a href="#"><%="매수"%></a></td>
 					</tr>
 					<%}%>
 					
