@@ -2,9 +2,9 @@ package stockService;
 
 import java.util.ArrayList;
 
-import stockDTO.stockDTO;
-import stockDao.stockDAO;
-import stockDao.stockDAOImpl;
+import stock.dao.stockDAO;
+import stock.dao.stockDAOImpl;
+import stock.dto.stockDTO;
 import term.dao.TermDAO;
 import term.dao.TermDAOImpl;
 import term.dto.TermDTO;

@@ -1,4 +1,4 @@
-package stockDTO;
+package stock.dto;
 
 public class stockDTO {
 	String stock_name;

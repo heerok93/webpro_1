@@ -1,4 +1,4 @@
-package stockDao;
+package stock.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -6,9 +6,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-import static stockfw.stockQuery.*;
-import stockDTO.stockDTO;
-import stockfw.*;
+import static stock.fw.stockQuery.*;
+import stock.dto.stockDTO;
+import stock.fw.*;
 
 public class stockDAOImpl implements stockDAO {
 

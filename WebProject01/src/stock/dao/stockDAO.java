@@ -1,8 +1,8 @@
-package stockDao;
+package stock.dao;
 
 import java.util.ArrayList;
 
-import stockDTO.stockDTO;
+import stock.dto.stockDTO;
 import term.dto.TermDTO;
 
 public interface stockDAO {
